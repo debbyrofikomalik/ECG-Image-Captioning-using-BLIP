@@ -20,7 +20,7 @@ The PTB-XL ECG dataset is a comprehensive collection comprising 21,837 clinical 
 Wagner, P., Strodthoff, N., Bousseljot, R., Samek, W., & Schaeffter, T. (2022). PTB-XL, a large publicly available electrocardiography dataset (version 1.0.3). PhysioNet. RRID:SCR_007345.  
 [https://doi.org/10.13026/kfzx-aw45](https://doi.org/10.13026/kfzx-aw45)
 
-## Pre-processing
+## Pre-Processing
 
 Prior to training, ECG images were cropped to focus on the signal area, resized to 224×224 pixels to match the Vision Transformer (ViT) input requirements, converted to greyscale, normalized based on overall brightness and contrast statistics, and then saved back in RGB format. Text annotations underwent preprocessing steps including translation to English using the Python library deep-translator, standardization of medical terms and abbreviations, conversion to lowercase, and removal of irrelevant punctuation. The dataset was then divided into subsets of 7,000, 14,000, and 21,671 samples to evaluate the effect of data size, with each subset further split into training, validation, and test sets in an 80:10:10 ratio using a fixed random seed. Image preprocessing procedures are documented in `pre-processing-image-datas.ipynb`, while text preprocessing steps are detailed in `pre-processing-text-datas.ipynb`.
 
