@@ -32,6 +32,11 @@ Model training was conducted under six scenarios: (1) BLIP-base with 7,000 sampl
 
 Model performance was evaluated using standard image captioning metrics, including BLEU, ROUGE-L, METEOR, CIDEr, and SPICE, as implemented in `evaluation.ipynb`. After training, a `.pth` model checkpoint is generated. Evaluation can be performed by uploading this `.pth` file using the Kaggle Upload feature, copying the path, and defining it in the `model_path` parameter within `evaluation.ipynb`.
 
+### Access to Pre-processed Data
+
+Pre-processed ECG image and text files used in this project can be accessed via the following Google Drive folder:  
+🔗 [https://drive.google.com/drive/folders/1AKgrgltd7PSdrvsmDQ9QA6byF5oiXbJT?usp=drive_link](https://drive.google.com/drive/folders/1AKgrgltd7PSdrvsmDQ9QA6byF5oiXbJT?usp=drive_link)
+
 ## GUI Development
 
 A web-based graphical user interface (GUI) was developed using Streamlit. Upon accessing the web application, users are greeted with a homepage displaying a header containing the logo and title, along with usage instructions presented in the sidebar. After uploading an ECG image, the system automatically preprocesses the image and displays the diagnostic description in the output section. The GUI implementation is detailed in `app.py`.
